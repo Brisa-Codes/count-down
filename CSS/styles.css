@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@200;400;600&family=Red+Hat+Text:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: 'Red Hat Text', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --dark-desaturated-blue: hsl(236, 21%, 26%);
+    --very-dark-blue: hsl(235, 16%, 14%);
+    --solid-dark-blue: hsl(234, 17%, 12%);
+    --greyish-blue: hsl(237, 18%, 59%);
+    --soft-red: hsl(345, 95%, 68%);
+}
+
+.container {
+    background-image: url(/images/bg-stars.svg);
+    background-color: var(--solid-dark-blue);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.clock-wrapper {
+    display: flex;
+}
+
+h2 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 2.4rem 0;
+    font-weight: 700;
+    letter-spacing: 6px;
+}
+
+.count-box-wrapper {
+    background-color: var(--dark-desaturated-blue);
+    margin: 0 5px;
+    height: 120px;
+    width: 120px;
+
+}
+
+span {
+    color: var(--soft-red);
+    font-size: 48px;
+}
+
+p {
+    text-align: center;
+    color: var(--greyish-blue);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 20px 0;
+}
+
+.count-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.icons i {
+    color: var(--greyish-blue);
+    padding: 12px;
+    font-size: 24px;
+}
+
+.icons i:hover {
+    color: var(--soft-red);
+    cursor: pointer;
+}
+
+.icons-wrapper {
+    background-image: url(/images/pattern-hills.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+}
