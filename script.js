@@ -9,6 +9,7 @@ const countdown = () => {
     const hour = minute * 60;
     const day = hour * 24;
 
+    
     // exact time
     const dayText = Math.floor(gap / day);
     const hourText = Math.floor((gap % day) / hour);
